@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String Methods & Concatenation</title>
+  </head>
+  <body>
+    <h1>String Methods & Concatenation</h1>
+
+    <script>
+      const firstName = 'Petar';
+      const lastName = 'Dragovic';
+      const age = 40;
+      const str = 'Hello there my name is Petar';
+      const tags = 'web design, web developmenst, programming';
+
+      let val;
+
+      val = firstName + lastName;
+
+      // Concatenation
+      val = firstName + ' ' + lastName;
+
+      // Append
+      val = 'Milica ';
+      val += 'Cumpalovic';
+
+      val = 'Hello, my name is ' + firstName + ' and I am ' + age;
+
+      // Escaping
+      val = "That's awesome, I can't wait"; // stave se \ ispred '
+      val = "That's awesome, I can't wait"; // stavi se sve pod duple navodnike " "
+
+      // Length
+      val = firstName.length;
+
+      // concat
+      val = firstName.concat(' ', lastName);
+
+      // Change case
+      val = firstName.toUpperCase();
+      val = firstName.toLowerCase();
+
+      val = firstName[2];
+
+      // indexOf()
+      val = firstName.indexOf('e');
+      val = firstName.lastIndexOf('e');
+
+      // CharAt()
+      val = firstName.charAt('2');
+      // Get last character
+      val = firstName.charAt(firstName.length - 1);
+
+      // substring()
+      val = firstName.substring(0, 4);
+
+      // slice()
+      val = firstName.slice(0, 4);
+      val = firstName.slice(-2);
+
+      // split()
+      val = str.split(' ');
+      val = tags.split(',');
+
+      // replace()
+      val = str.replace('Petar', 'Milica');
+
+      // includes()
+      val = str.includes('Hello');
+
+      console.log(val);
+    </script>
+  </body>
+</html>
