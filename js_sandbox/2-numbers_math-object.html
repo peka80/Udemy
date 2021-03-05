@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Numbers & The Math Object</title>
+  </head>
+  <body>
+    <h1>Numbers & The Math Object</h1>
+
+    <script>
+      const num1 = 100;
+      const num2 = 50;
+      let val;
+
+      // Simple math with numbers
+      val = num1 + num2;
+      val = num1 - num2;
+      val = num1 * num2;
+      val = num1 / num2;
+      val = num1 % num2;
+
+      // Math Object
+      val = Math.PI;
+      val = Math.E;
+      val = Math.round(2.4); // Zaokruzuje na 2 - ako je 2.6 na 3
+      val = Math.ceil(2.4); // Zaokruzuje na 3
+      val = Math.floor(2.8); // Zaokruzuje na 2
+      val = Math.sqrt(25); // koren od broja
+      val = Math.abs(-3); // negatvi u pozitivan broj
+      val = Math.pow(8, 2); // koren, moze da bude na kub...
+      val = Math.min(2, 33, 4, 1, 55, 6, 3, -2);
+      val = Math.max(2, 33, 4, 1, 55, 6, 3, -2);
+      val = Math.random();
+
+      val = Math.floor(Math.random() * 20 + 1);
+
+      console.log(val);
+    </script>
+  </body>
+</html>
