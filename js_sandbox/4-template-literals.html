@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template Literals</title>
+  </head>
+  <body>
+    <h1>Template Literals</h1>
+
+    <script>
+      const name = 'Petar';
+      const age = 41;
+      const job = 'Web Developer';
+      const city = 'Nov Sad';
+      let html;
+
+      function hello() {
+        return 'hello';
+      }
+
+      // Without template strings (es5)
+      html =
+        '<ul><li>Name: ' +
+        name +
+        '</li><li>Age: ' +
+        age +
+        '</li><li>Job: ' +
+        job +
+        '</li><li>City: ' +
+        city +
+        '</li></ul>';
+
+      // With template strings (es6)
+      html = `
+          <ul>
+            <li>Name: ${name}
+            <li>Age: ${age}
+            <li>Job: ${job}
+            <li>City: ${city}
+            <li>City: ${2 + 2}
+            <li>City: ${hello()}
+            <li>City: ${age > 40 ? 'Over 40' : 'Under 40'}
+          </ul>
+      `;
+
+      document.body.innerHTML = html;
+    </script>
+  </body>
+</html>
